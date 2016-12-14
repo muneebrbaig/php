@@ -1,4 +1,6 @@
 <!--
+11.5.1 Passing Arguments by Value
+
 When an argument is passed to the function as a value, the value of the argument remains unchanged
 outside the function. The arguments are prefxed with the dollar ($) sign in the function defnition to
 indicate that the argument will be passed by the value.
@@ -33,3 +35,13 @@ echo "<br>The difference of $A and $B is: $C";
 //Calling the function and assigning values to the argument
 subtraction(90,45);
 ?>
+
+<!--
+In the code, the argument is passed by value. The variable $A is passed to the Square() function,
+which multiplies $A with $A and stores the result in the same variable. When the function is called, the
+output is displayed as 25. The value of variable, $A outside the function Square($A) is 5 because the
+execution of a function does not affect the value of the variable outside the function. Two arguments are
+passed to the function subtraction(). The subtraction() function subtracts the variable $B from
+$A and stores the resultant value in $C.
+
+-->
