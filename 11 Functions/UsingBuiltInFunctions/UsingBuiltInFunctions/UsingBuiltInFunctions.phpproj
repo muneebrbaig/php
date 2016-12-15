@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>UsingBuiltInFunctions</Name>
+    <ProjectGuid>9ef3a144-a4c3-492a-8939-42ab22d465d1</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>UsingBuiltInFunctions</AssemblyName>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>5.6</RuntimeVersion>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="cube\cube.php" />
+    <Compile Include="datetime\index.php" />
+    <Compile Include="index.php" />
+    <Compile Include="squareroot\squareroot.php" />
+    <Compile Include="strings\convert.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="datetime\" />
+    <Folder Include="cube\" />
+    <Folder Include="strings\" />
+    <Folder Include="squareroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cube\cube.html" />
+    <Content Include="squareroot\index.html" />
+  </ItemGroup>
+</Project>
